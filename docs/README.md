@@ -119,7 +119,11 @@ PS C:\geometric_lib python -c 'import triangle; print(triangle.perimeter(2,3,4)'
 #### Кол-во ошибочных тестов: 24
 ## История изменений:
 
+- 56b49ecc4c71b235cbed5b7c73951c798fb78e01; docs: changed Readme.md, added information about tests; Autor:  Ivan
+- e25801418bb86dce121098c6cd0850352fe25c98; test: added unit tests to circle.py, rectangle.py, square.py, triangle.py; Autor:  Ivan
+- b70a4d438db16e9997b1187beeb114a0fa3b08a9; new files: reports; Autor:  Ivan
+- ba7406919fd89723cc6c180b9b98e11641527edc; Added documentation; Autor:  Ivan
 - e357392d455aeeaa4c30e0ac8a06fcec7c0d4e6c; new file: triangle.py; modified: rectangle.py; Autor: Ivan
-- d540ac2cc0cfa32f885544afd3fc70d8e4f953b0;  new file: rectangle.py; Autor: Ivan
+- d540ac2cc0cfa32f885544afd3fc70d8e4f953b0; new file: rectangle.py; Autor: Ivan
 - d078c8d9ee6155f3cb0e577d28d337b791de28e2; L-03: Docs added; Autor: smartiqa
 - 8ba9aeb3cea847b63a91ac378a2a6db758682460; L-03: Circle and square added; Autor: smartiqa

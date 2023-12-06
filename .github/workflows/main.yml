@@ -1,0 +1,32 @@
+name: AutoTest
+on:
+  push:
+    branches: ["tests_244541"]
+
+jobs:
+  test-on-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v4
+      - name: Check out unit tests for Circle
+        run: python ./test/testCircle.py
+      - name: Check out unit tests for Rectangle
+        run: python ./test/testRectangle.py
+      - name: Check out unit tests for Square  
+        run: python ./test/testSquare.py
+      - name: Check out unit tests for Triangle
+        run: python ./test/testTriangle.py                          
+  test-on-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v4
+      - name: Check out unit tests for Circle
+        run: python ./test/testCircle.py
+      - name: Check out unit tests for Rectangle
+        run: python ./test/testRectangle.py
+      - name: Check out unit tests for Square  
+        run: python ./test/testSquare.py
+      - name: Check out unit tests for Triangle
+        run: python ./test/testTriangle.py

@@ -12,10 +12,13 @@ jobs:
       - name: Check out unit tests for Circle
         run: python ./test/testCircle.py
       - name: Check out unit tests for Rectangle
+        if: success() || failure()
         run: python ./test/testRectangle.py
-      - name: Check out unit tests for Square  
+      - name: Check out unit tests for Square
+        if: success() || failure()  
         run: python ./test/testSquare.py
       - name: Check out unit tests for Triangle
+        if: success() || failure()
         run: python ./test/testTriangle.py                          
   test-on-windows:
     runs-on: windows-latest
@@ -25,8 +28,11 @@ jobs:
       - name: Check out unit tests for Circle
         run: python ./test/testCircle.py
       - name: Check out unit tests for Rectangle
+        if: success() || failure()
         run: python ./test/testRectangle.py
-      - name: Check out unit tests for Square  
+      - name: Check out unit tests for Square
+        if: success() || failure()  
         run: python ./test/testSquare.py
       - name: Check out unit tests for Triangle
+        if: success() || failure()
         run: python ./test/testTriangle.py

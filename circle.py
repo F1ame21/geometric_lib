@@ -10,3 +10,4 @@ def perimeter(r):
     """ Возвращает периметр круга, радиуса r """ 
     return 2 * math.pi * r
 
+print(math.pi)
